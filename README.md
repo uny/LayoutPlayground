@@ -26,4 +26,8 @@ Use a playground to layout iOS views without storyboards.
 2. `carthage update`
 3. Follow the steps of [Adding frameworks to unit tests or a framework](https://github.com/Carthage/Carthage#adding-frameworks-to-unit-tests-or-a-framework).
 
+### 6. Edit Public UIView
+1. Create a public UIView in the framework.
+
+
 ## Guide

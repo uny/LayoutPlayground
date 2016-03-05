@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		AA45B4151C8B0D7C0052080F /* LayoutPlaygroundFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = AA45B4141C8B0D7C0052080F /* LayoutPlaygroundFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA45B41E1C8B11BC0052080F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA45B41C1C8B11850052080F /* SnapKit.framework */; };
+		AA45B4201C8B12970052080F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA45B41F1C8B12970052080F /* SnapKit.framework */; };
+		AA45B4241C8B13020052080F /* PublicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA45B4231C8B13020052080F /* PublicView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA45B4111C8B0D7C0052080F /* LayoutPlaygroundFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LayoutPlaygroundFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA45B4141C8B0D7C0052080F /* LayoutPlaygroundFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutPlaygroundFramework.h; sourceTree = "<group>"; };
 		AA45B4161C8B0D7C0052080F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA45B41C1C8B11850052080F /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		AA45B41F1C8B12970052080F /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		AA45B4231C8B13020052080F /* PublicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,7 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA45B41E1C8B11BC0052080F /* SnapKit.framework in Frameworks */,
+				AA45B4201C8B12970052080F /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,7 +35,7 @@
 		AA45B4071C8B0D7C0052080F = {
 			isa = PBXGroup;
 			children = (
-				AA45B41C1C8B11850052080F /* SnapKit.framework */,
+				AA45B4211C8B12BB0052080F /* Frameworks */,
 				AA45B4131C8B0D7C0052080F /* LayoutPlaygroundFramework */,
 				AA45B4121C8B0D7C0052080F /* Products */,
 			);
@@ -50,10 +52,27 @@
 		AA45B4131C8B0D7C0052080F /* LayoutPlaygroundFramework */ = {
 			isa = PBXGroup;
 			children = (
+				AA45B4221C8B12F00052080F /* Views */,
 				AA45B4141C8B0D7C0052080F /* LayoutPlaygroundFramework.h */,
 				AA45B4161C8B0D7C0052080F /* Info.plist */,
 			);
 			path = LayoutPlaygroundFramework;
+			sourceTree = "<group>";
+		};
+		AA45B4211C8B12BB0052080F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA45B41F1C8B12970052080F /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA45B4221C8B12F00052080F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA45B4231C8B13020052080F /* PublicView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA45B4241C8B13020052080F /* PublicView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,28 +253,31 @@
 		AA45B41A1C8B0D7C0052080F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = LayoutPlaygroundFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.ynagai.LayoutPlaygroundFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		AA45B41B1C8B0D7C0052080F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = LayoutPlaygroundFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
