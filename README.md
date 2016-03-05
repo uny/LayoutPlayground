@@ -21,4 +21,7 @@ Use a playground to layout iOS views without storyboards.
 3. Build the application framework.
 4. Import the framework into the playground.
 
+### 5. SnapKit
+1. Add `github "SnapKit/SnapKit"` in the `Cartfile`.
+
 ## Guide
