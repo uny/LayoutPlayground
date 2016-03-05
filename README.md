@@ -25,9 +25,16 @@ Use a playground to layout iOS views without storyboards.
 1. Add `github "SnapKit/SnapKit"` in the `Cartfile` for the framework.
 2. `carthage update`
 3. Follow the steps of [Adding frameworks to unit tests or a framework](https://github.com/Carthage/Carthage#adding-frameworks-to-unit-tests-or-a-framework).
+4. The "Copy Files" build phase is also needed.
 
 ### 6. Edit Public UIView
 1. Create a public UIView in the framework.
+2. Write a code for layout.
+3. Build the framework.
+4. Execute the playground.
 
+![Building](./LayoutPlayground.gif)
 
 ## Guide
+* Application projects cannot be used in a playground.
+* Application frameworks need to have "Copy Files" build phase for Carthage frameworks.

@@ -1,5 +1,8 @@
 //: Playground - noun: a place where people can play
 
+import XCPlayground
 import LayoutPlaygroundFramework
 
-var str = "Hello, playground"
+let view = PublicView()
+
+XCPlaygroundPage.currentPage.liveView = view

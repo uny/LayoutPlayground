@@ -8,9 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		AA45B4151C8B0D7C0052080F /* LayoutPlaygroundFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = AA45B4141C8B0D7C0052080F /* LayoutPlaygroundFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA45B4201C8B12970052080F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA45B41F1C8B12970052080F /* SnapKit.framework */; };
 		AA45B4241C8B13020052080F /* PublicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA45B4231C8B13020052080F /* PublicView.swift */; };
+		AA45B4251C8B15F90052080F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA45B41F1C8B12970052080F /* SnapKit.framework */; };
+		AA45B4271C8B162E0052080F /* SnapKit.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = AA45B41F1C8B12970052080F /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA45B4261C8B16210052080F /* Carthage Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA45B4271C8B162E0052080F /* SnapKit.framework in Carthage Copy Files */,
+			);
+			name = "Carthage Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AA45B4111C8B0D7C0052080F /* LayoutPlaygroundFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LayoutPlaygroundFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA45B4201C8B12970052080F /* SnapKit.framework in Frameworks */,
+				AA45B4251C8B15F90052080F /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +112,7 @@
 				AA45B40D1C8B0D7C0052080F /* Frameworks */,
 				AA45B40E1C8B0D7C0052080F /* Headers */,
 				AA45B40F1C8B0D7C0052080F /* Resources */,
+				AA45B4261C8B16210052080F /* Carthage Copy Files */,
 			);
 			buildRules = (
 			);
