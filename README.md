@@ -7,3 +7,4 @@ Use a playground to layout iOS views without storyboards.
 
 ### 2. Application Project
 1. Create an application project in the `LayoutPlayground` directory.
+2. Add the project to the workspace.
