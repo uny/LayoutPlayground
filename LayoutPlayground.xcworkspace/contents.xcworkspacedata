@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:LayoutPlayground.playground">
+   </FileRef>
+   <FileRef
       location = "group:LayoutPlayground/LayoutPlayground.xcodeproj">
    </FileRef>
    <FileRef
