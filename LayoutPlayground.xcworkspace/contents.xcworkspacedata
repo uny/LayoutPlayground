@@ -4,4 +4,7 @@
    <FileRef
       location = "group:LayoutPlayground/LayoutPlayground.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:LayoutPlaygroundFramework/LayoutPlaygroundFramework.xcodeproj">
+   </FileRef>
 </Workspace>

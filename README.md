@@ -13,3 +13,4 @@ Use a playground to layout iOS views without storyboards.
 
 ### 3. Application Framework
 1. Create an application framework in the directory.
+2. Add the framework to the workspace.
