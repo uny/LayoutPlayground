@@ -1,5 +1,5 @@
 //: Playground - noun: a place where people can play
 
-import UIKit
+import LayoutPlaygroundFramework
 
 var str = "Hello, playground"
