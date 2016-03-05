@@ -22,7 +22,7 @@ Use a playground to layout iOS views without storyboards.
 4. Import the framework into the playground.
 
 ### 5. SnapKit
-1. Add `github "SnapKit/SnapKit"` in the `Cartfile`.
+1. Add `github "SnapKit/SnapKit"` in the `Cartfile` for the framework.
 2. `carthage update`
 3. Follow the steps of [Adding frameworks to unit tests or a framework](https://github.com/Carthage/Carthage#adding-frameworks-to-unit-tests-or-a-framework).
 
